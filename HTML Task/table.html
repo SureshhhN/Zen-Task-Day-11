@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-content: center;
+            min-height: 100vh;
+            background-color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            /* color: white; */
+        }
+        .container{
+            background-color: white;
+            border: solid;
+            padding: 7px;
+           
+        }
+        h2{
+            text-align: center;
+            font-size: 15px
+        }
+        th{
+            text-align: center;
+            padding: 15px;
+            border: 1px solid;
+            border-collapse: collapse ;
+
+        }
+        td{
+           text-align: center;
+           padding: 17px; 
+           border: 1px solid;
+           border-collapse: collapse ;
+
+        }
+        table{
+            /* border: 1px solid; */
+            border-collapse: collapse ;
+            color: black;
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Health Chart</h2>
+    <table>
+        <th rowspan="2">State of Health</th>
+        <th colspan="2">Fasting Value</th>
+        <th >After Eating</th>
+
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours after eating</td>
+        </tr>
+
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr>
+    </table>
+
+</div>
+    
+</body>
+</html>
